@@ -16,7 +16,7 @@ const HomePage = ({data}) => <Layout data={data.layoutData}>
 export default HomePage
 
 export const query = graphql`
-  {
+  query HomePageQuery {
     layoutData: imageSharp(id: {eq: "ca8ed1b1-2b21-5a2e-8628-214a3ab402a3"}) {
       fluid(maxWidth: 2400) {
         src

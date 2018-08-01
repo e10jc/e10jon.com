@@ -6,10 +6,18 @@ injectGlobal`
   html, body { margin: 0 }
 `
 
-export default ({children}) => <Provider>
-  <Wrapper bg='black' color='white' alignItems='center' justifyContent='center'>{children}</Wrapper>
-</Provider>
+const Layout = ({children, data}) => {
+  const Wrapper = Flex.extend`
+    background-image: url(${data.fluid.src});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  `
 
-const Wrapper = Flex.extend`
-  min-height: 100vh;
-`
+  return <Provider>
+    <Wrapper color='white' alignItems='center' justifyContent='center'>{children}</Wrapper>
+  </Provider>
+}
+
+export default Layout

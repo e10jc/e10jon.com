@@ -8,7 +8,7 @@ injectGlobal`
 
 const Layout = ({children, data}) => {
   const Wrapper = Flex.extend`
-    background-image: url(${data.fluid.src});
+    background-image: url(${data.childImageSharp.fluid.src});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
-  "license": "MIT",
+  "name": "e10jon.com",
+  "description": "https://e10jon.com",
+  "license": "UNLICENSED",
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
@@ -10,8 +10,8 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.5.1",
     "gatsby": "next",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-plugin-styled-components": "^2.0.11",
+    "gatsby-plugin-react-helmet": "^3.0.0-beta.4",
+    "gatsby-plugin-styled-components": "^3.0.0-beta.3",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-helmet": "^5.2.0",
